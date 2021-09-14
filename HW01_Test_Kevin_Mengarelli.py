@@ -44,9 +44,5 @@ class ClassifyTriangleTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             classify_triangle(1,2,9999)
 
-
-
-        print("test complete")
-
 if __name__ == '__main__':
     unittest.main(exit=False, verbosity=2)

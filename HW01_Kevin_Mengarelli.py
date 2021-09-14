@@ -20,8 +20,6 @@ def classify_triangle(a: float, b: float, c: float) -> str:
     sides: List[float] = [float(a),float(b),float(c)]
     sides.sort() # sort sides smallest to largest
 
-    print(sides)
-    
     # if a^2 + b^2 = c^2 then it is a right angle
     if (sides[0]*sides[0] + sides[1]*sides[1] == sides[2] * sides[2]):
         return "Right"
@@ -34,5 +32,10 @@ def classify_triangle(a: float, b: float, c: float) -> str:
     # if all sides are different it is scalene
     else:
         return "Scalene"
+
+
+print(classify_triangle(3,3,3))
+print(classify_triangle(4,3,5))
+print(classify_triangle(2,2,3))
 
     ######################################
