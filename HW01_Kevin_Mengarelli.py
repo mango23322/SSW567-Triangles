@@ -8,6 +8,7 @@
 # include
 from typing import List
 from math import sqrt
+import sys
 
 def classify_triangle(a: float, b: float, c: float) -> str: 
     ''' takes in three sides of a triangle and return a string for the type of triangle it is
@@ -37,5 +38,7 @@ def classify_triangle(a: float, b: float, c: float) -> str:
 print(classify_triangle(3,3,3))
 print(classify_triangle(4,3,5))
 print(classify_triangle(2,2,3))
+
+x = classify_triangle(2,2,3)
 
     ######################################
